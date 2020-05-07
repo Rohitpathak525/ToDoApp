@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Morning "
+        android:id="@+id/textview"
+        android:textSize="40sp"
+        android:background="#cd5c5c"
+        android:textAlignment="center"/>
+<ListView
+    android:layout_marginTop="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/listview"
+    android:background="#f5f5dc"
+    android:dividerHeight="3dp"
+    android:divider="#8b4513"
+    />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext"
+        android:hint="Enter task"
+        android:textSize="30sp"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_action_name"
+        android:layout_gravity="bottom|end"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edelete"
+        android:hint="Enter position to be deleted"
+        android:textSize="15sp"
+        android:layout_gravity="end|bottom"/>
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove"
+        android:id="@+id/delete"
+        android:inputType="number"
+        android:layout_gravity="end|bottom"/>
+</LinearLayout>
